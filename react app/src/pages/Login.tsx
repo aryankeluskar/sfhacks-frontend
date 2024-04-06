@@ -1,6 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { Link } from "react-router-dom";
-import styles from "./Login.module.css";
+import styles from "../css/Login.module.css";
 
 function Login() {
   const [username, setUsername] = useState("");

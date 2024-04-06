@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import styles from './SignUp.module.css'; // Import the CSS module
+import styles from '../css/SignUp.module.css'; // Import the CSS module
 import { Link } from 'react-router-dom';
 
 const SignUp: React.FC = () => {

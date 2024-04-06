@@ -27,7 +27,7 @@
 
 
 import React from 'react';
-import "./Profile.css"
+import "../css/Profile.css"
 
 interface ProfileProps {
     name: string;
