@@ -1,7 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-import "./Login.css";
-
-
+import { Link } from "react-router-dom";
+import styles from "./Login.module.css";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -20,11 +19,10 @@ function Login() {
     console.log({"Username": username, "Password": password});
     setUsername("");
     setPassword("");
-    
   };
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Login Page</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -51,6 +49,9 @@ function Login() {
         </div>
         <div>
           <input type="submit" value="Login" />
+        </div>
+        <div>
+          <Link to="signup">Don't have an account? Create new account.</Link>
         </div>
       </form>
     </div>
