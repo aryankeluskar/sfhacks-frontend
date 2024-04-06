@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 //import pages
-import Login from "./pages/Login";
+  import LoginForm from "./pages/login";
 
 function App() {
     return (
       <div className="App">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<LoginForm/>} />
             {/* <Route path="signup" element={<SignUp />} /> */}
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

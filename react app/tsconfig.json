@@ -21,6 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "views/index.tsx", "views/login.tsx", "views/register.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
