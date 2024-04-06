@@ -54,11 +54,11 @@ const Profile_Input: React.FC = () => {
                 <label htmlFor="profilePicture">Profile Picture:</label>
                 <input type="file" id="profilePicture" name="profilePicture" accept="image/*" onChange={handleImageChange} />
 
+                <br></br>
+                <br></br>
                 {formData.profilePictureUrl && (
                     <img src={formData.profilePictureUrl} alt={formData.name} className="profile-picture-preview" />
                 )}
-                <br></br>
-                <br></br>
                 <br></br>
                 <div id="submitDiv">
                     <input id="submit" type="submit" value="Submit"/>
