@@ -57,14 +57,14 @@ const Profile_Input: React.FC = () => {
                 {formData.profilePictureUrl && (
                     <img src={formData.profilePictureUrl} alt={formData.name} className="profile-picture-preview" />
                 )}
-
-                <button type="submit">Save</button>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div id="submitDiv">
+                    <input id="submit" type="submit" value="Submit"/>
+                </div>
             </form>
-            {/* <div className="profile-info">
-                <h2>{formData.name}</h2>
-                <p><strong>Age:</strong> {formData.age}</p>
-                <p><strong>Bio:</strong> {formData.bio}</p>
-            </div> */}
+
         </div>
     );
 };
