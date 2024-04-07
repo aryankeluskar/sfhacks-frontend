@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for the navbar */
+}
+
+.navbar-logo {
+    font-size: 1.5rem; /* Larger font size for the logo */
+    
+}
+
+.navbar-nav {
+    list-style: none; /* Remove bullet points from the list */
+    display: flex; /* Display navigation items in a row */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.nav-item {
+    margin-left: 20px; /* Add spacing between navigation items */
+}
+
+.nav-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-size: 2em;
+    
+}
+
+.nav-item a:hover {
+    color: #ffd700; /* Yellow text color on hover */
+}
