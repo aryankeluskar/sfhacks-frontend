@@ -9,6 +9,20 @@ body {
     margin: 0;
 }
 
+.wholeDiv {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Set height to 100% of viewport height */
+    background-image: url("../assets//g.jpeg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Square container for topics */
 .topics-container {
     max-width: 600px;
@@ -42,7 +56,7 @@ h1 {
     padding: 8px 16px;
     border: 2px solid transparent; /* Default transparent border */
     border-radius: 15px;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     color: #333;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -50,7 +64,7 @@ h1 {
 }
 
 .topics button:hover {
-    background-color: #ccc;
+    background-color: #dbd8d8;
     transform: translateY(-2px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -62,7 +76,12 @@ h1 {
 
 /* Selected topic styles */
 .selected {
-    background-color: #007bff;
+    background-color: #3c9aff;
+    color: white;
+    border-color: #007bff; /* Blue border for selected */
+}
+.unselected {
+    background-color: #ededed;
     color: white;
     border-color: #007bff; /* Blue border for selected */
 }
@@ -74,3 +93,38 @@ h1 {
     }
 }
     
+
+.TOI-form {
+    background-color: rgb(241, 241, 241);
+    padding: 20px 25px;
+    border-radius: 20px;
+}
+
+.row-form {
+    display: flex;
+}
+
+#submitDiv {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+#submit {
+    /* Additional styles for the button */
+    width: 175px; /* Adjust width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 20px; /* Round edges */
+    background-color: #007bff; /* Green background */
+    color: white; /* White text color */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+#prompt {
+    background-color: white;
+    height: 1em;
+}

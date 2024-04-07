@@ -51,11 +51,11 @@ function Login() {
           <input type="submit" value="Login" />
         </div>
         <div>
-          <Link to="signup">Don't have an account? Create new account.</Link>
+          <Link to="/">Don't have an account? Create new account.</Link>
         </div>
       </form>
     </div>
   );
-};
+}
 
 export default Login;

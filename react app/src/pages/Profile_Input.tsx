@@ -42,6 +42,7 @@ const Profile_Input: React.FC = () => {
     return (
         <div className="container">
             <form className="profile-form" onSubmit={handleSubmit}>
+                <h1 className="userInfo">User Info</h1>
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
 

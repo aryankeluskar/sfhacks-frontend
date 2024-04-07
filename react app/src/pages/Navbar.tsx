@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-dom
-import "./Navbar.css";
+import "../css/Navbar.css";
 
 const Navbar: React.FC = () => {
     // Function to determine the class name based on isActive
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
             <ul className="navbar-nav">
                 <li className="nav-item">
                     {/* Apply dynamic class based on active state */}
-                    <NavLink to="/feed" className={({ isActive }) => getClassName(isActive)}>
+                    <NavLink to="/" className={({ isActive }) => getClassName(isActive)}>
                         Home
                     </NavLink>
                 </li>
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/signup" className={({ isActive }) => getClassName(isActive)}>
+                    <NavLink to="/" className={({ isActive }) => getClassName(isActive)}>
                         Register
                     </NavLink>
                 </li>

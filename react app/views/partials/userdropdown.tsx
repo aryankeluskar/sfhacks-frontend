@@ -2,7 +2,6 @@ import React from 'react';
 
 interface UserDropdownProps {
   user: { username: string; userId: string };
-  isLoggedIn: boolean;
 }
 
 const UserDropdown: React.FC<UserDropdownProps> = ({ user }) => {

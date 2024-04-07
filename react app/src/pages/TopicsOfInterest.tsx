@@ -49,37 +49,61 @@ function TopicsOfInterest() {
       setTopics((currentTopics) => [...currentTopics, newTopicInput]);
       setNewTopicInput(""); // Clear the input field after submit
     }
+
+
   };
 
+  // function test() {
+  // }
+
   return (
-    <div>
-      <h1>Select some topics of your interest</h1>
+    <div className="wholeDiv">
       <div className="topics-container">
-        <div className="topics">
-          {topics.map((topic, index) => (
-            <button
-              key={index}
-              onClick={() => handleSelectTopic(topic)}
-              className={selectedTopics.includes(topic) ? "selected" : ""}
-            >
-              {topic}
-            </button>
-          ))}
+        <h1>Select some topics of your interest</h1>
+        <div>
+          <div className="topics">
+            {topics.map((topic, index) => (
+              <button id="selected-topic"
+                key={index}
+                onClick={() => handleSelectTopic(topic)}
+                // onClick={() => {handleSelectTopic(topic); test();}}
+                className={selectedTopics.includes(topic) ? "selected" : "unselected"}
+              >
+                {topic}
+              </button>
+            ))}
+          </div>
+          <br></br>
+          <form className="TOI-form" onSubmit={handleNewTopic}>
+            <label htmlFor="newtopic" className="row-form">
+                <input
+                  type="text"
+                  id="newtopic"
+                  value={newTopicInput}
+                  onChange={(e) => setNewTopicInput(e.target.value)}
+                />
+              <div id="submitDiv">
+                <input id="submit" type="submit" />
+              </div>
+            </label>
+          </form>
         </div>
-        <form onSubmit={handleNewTopic}>
-          <label htmlFor="newtopic">
-            <input
-              type="text"
-              id="newtopic"
-              value={newTopicInput}
-              onChange={(e) => setNewTopicInput(e.target.value)}
-            />
-            <input type="submit" />
-          </label>
-        </form>
       </div>
     </div>
   );
 }
 
 export default TopicsOfInterest;
+
+
+
+
+
+// const element = document.getElementById('selected-topic');
+// if (element) {
+//   if (element.classList.contains('selected')) {
+//     element.classList.remove('selected'); // Remove class name
+//   } else {
+//     element.classList.add('selected'); // Add class name
+//   }
+// }

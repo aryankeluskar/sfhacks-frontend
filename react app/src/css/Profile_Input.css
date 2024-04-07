@@ -1,5 +1,16 @@
 .container {
-    background-color: rgb(213, 213, 213);
+    height: 94vh;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-image: url("../assets/scene1.jpeg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 #submitDiv {
@@ -7,18 +18,6 @@
     justify-content: center;
 }
 
-#submit {
-    /* Additional styles for the button */
-    width: 200px; /* Adjust width as needed */
-    padding: 10px; /* Adjust padding as needed */
-    border: none;
-    border-radius: 20px; /* Round edges */
-    background-color: rgb(10, 206, 10); /* Green background */
-    color: white; /* White text color */
-    font-size: 16px; /* Adjust font size as needed */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
 
 #submit:hover {
     background-color: rgb(10, 148, 10); /* Dark green background on hover */
@@ -32,8 +31,13 @@
     resize: vertical; /* Allow vertical resizing */
     border-radius: 10px; /* Round edges */
     padding: 10px; /* Add padding for better appearance */
+    border-width: 0.1px;
+    border-color: rgb(187, 187, 187);
 }
 
+form {
+
+}
 
 /* Apply styles to the label */
 label {
@@ -41,6 +45,27 @@ label {
     margin-bottom: 5px; /* Add some space below the label */
     font-weight: bold; /* Make the label text bold */
 }
+
+
+/* Apply styles to the input field */
+input[type="text"] {
+    padding: 10px; /* Add padding to the input field */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set font size */
+    width: 100%; /* Set width to 100% of its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease; /* Add a smooth transition for border color change */
+}
+
+/* Apply styles when the input field is focused */
+input[type="text"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+
+
 
 /* Apply styles to the input field */
 input[type="number"] {
@@ -59,6 +84,11 @@ input[type="number"]:focus {
     border-color: #007bff; /* Change border color on focus */
 }
 
+.profile-form {
+    background-color: rgb(236, 234, 234);
+    padding: 40px 25px;
+    border-radius: 20px;
+}
 
 /* Apply styles to the image preview */
 .profile-picture-preview {
