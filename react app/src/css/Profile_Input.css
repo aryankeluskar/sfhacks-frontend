@@ -1,0 +1,103 @@
+.container {
+    background-color: rgb(213, 213, 213);
+}
+
+#submitDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    /* Additional styles for the button */
+    width: 200px; /* Adjust width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 20px; /* Round edges */
+    background-color: rgb(10, 206, 10); /* Green background */
+    color: white; /* White text color */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#submit:hover {
+    background-color: rgb(10, 148, 10); /* Dark green background on hover */
+}
+
+
+#bio {
+    width: 95%; /* Fit to the width of its container */
+    height: auto; /* Allow vertical scaling */
+    max-width: 95%; /* Ensure it doesn't exceed the width of its container */
+    resize: vertical; /* Allow vertical resizing */
+    border-radius: 10px; /* Round edges */
+    padding: 10px; /* Add padding for better appearance */
+}
+
+
+/* Apply styles to the label */
+label {
+    display: block; /* Display the label as a block element */
+    margin-bottom: 5px; /* Add some space below the label */
+    font-weight: bold; /* Make the label text bold */
+}
+
+/* Apply styles to the input field */
+input[type="number"] {
+    padding: 10px; /* Add padding to the input field */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set font size */
+    width: 100%; /* Set width to 100% of its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease; /* Add a smooth transition for border color change */
+}
+
+/* Apply styles when the input field is focused */
+input[type="number"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+
+/* Apply styles to the image preview */
+.profile-picture-preview {
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    border-radius: 50%; /* Make the border radius 50% to create a circle */
+    margin: 10px auto; /* Center the image horizontally with auto margin */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    overflow: hidden; /* Hide any overflow beyond the circle */
+}
+
+/* Make sure the image fills the circle */
+.profile-picture-preview img {
+    width: 100%; /* Set the width of the image to 100% */
+    height: 100%; /* Set the height of the image to 100% */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+}
+
+
+/* Apply styles to the file input */
+input[type="file"] {
+    padding: 10px; /* Add padding to the input field */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set font size */
+    width: 100%; /* Set width to 100% of its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease; /* Add a smooth transition for border color change */
+}
+
+
+/* Apply styles when the file input is focused */
+input[type="file"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+/* Hide default file input appearance
+input[type="file"]::-webkit-file-upload-button {
+    display: none;
+} */

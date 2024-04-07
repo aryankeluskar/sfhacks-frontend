@@ -1,0 +1,76 @@
+/* Container styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Square container for topics */
+.topics-container {
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #bbb;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title styles */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Topics container styles */
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Button (topic) styles */
+.topics button {
+    padding: 8px 16px;
+    border: 2px solid transparent; /* Default transparent border */
+    border-radius: 15px;
+    background-color: #ddd;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.topics button:hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.topics button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+/* Selected topic styles */
+.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff; /* Blue border for selected */
+}
+
+@media (max-width: 768px) {
+    .topics-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+    

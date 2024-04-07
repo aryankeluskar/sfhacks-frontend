@@ -1,0 +1,90 @@
+
+
+/* Container styles with adjustments for full viewport coverage and centering */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensures the container covers the full viewport height */
+  background-image: url('../assets/loginbk.jpg'); /* Add this line, replace with your image path */
+  background-size: cover; /* This will make sure the image covers the whole container */
+  background-position: center; /* This will center the image in the container */
+}
+
+.container h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.container form {
+  padding: 2rem;
+  background-color: #ffffff; /* Background color for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a subtle depth effect */
+  width: 100%;
+  max-width: 400px; /* Max width to keep the form reasonably sized */
+}
+
+.container form div {
+  margin-bottom: 1rem; /* Spacing between form elements */
+}
+
+.container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666; /* Lighter text color for labels for contrast */
+}
+
+/* Styles for input elements, ensuring full width and consistent padding */
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  box-sizing: border-box; /* Ensures padding doesn't add to the element's total width */
+}
+
+/* Border styles for text, password, and email inputs */
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333; /* Dark text color for readability */
+}
+
+/* Styling for the submit button */
+.container input[type="submit"] {
+  background-color: #28a745; /* Green background for a vibrant submit button */
+  color: white; /* White text for contrast */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold; /* Makes the button text bold */
+}
+
+.container input[type="submit"]:hover {
+  background-color: #218838; /* Darker green on hover for a subtle interaction cue */
+}
+
+.container input[type="text"]:focus,
+.container input[type="password"]:focus,
+.container input[type="email"]:focus {
+  outline: none;
+  border-color: #28a745; /* Changes border color to green on focus */
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.25); /* Adds a glow effect on focus */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem; /* Reduces padding on smaller screens for more space */
+  }
+
+  .container form {
+    padding: 1.5rem; /* Slightly more padding within the form for better layout */
+  }
+}
