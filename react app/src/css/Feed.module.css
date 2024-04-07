@@ -1,0 +1,82 @@
+/* Feed.module.css */
+.feedContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feedTitle {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.groupItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.groupImageContainer {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border-radius: 40px; /* Makes the image circular */
+  overflow: hidden;
+  background-image: url('/path-to-default-avatar.jpg'); /* Placeholder for user image */
+  background-size: cover;
+  background-position: center;
+}
+
+.groupContent {
+  flex-grow: 1;
+}
+
+.groupName {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.groupDescription {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.membersList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #444;
+  font-size: 13px;
+}
+
+.memberItem {
+  margin-bottom: 4px;
+}
+
+.joinButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: auto; /* Pushes the button to the right */
+  transition: background-color 0.3s, transform 0.1s ease-in-out;
+}
+
+.joinButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "Name": "Bruno",
+      "email": "bruno@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "Name": "Alice",
+      "email": "alice@gmail.com",
+      "password": "67890"
+    },
+    {
+      "id": "3",
+      "Name": "Carlos",
+      "email": "carlos@gmail.com",
+      "password": "11223"
+    },
+    {
+      "id": "4",
+      "Name": "Diana",
+      "email": "diana@gmail.com",
+      "password": "44556"
+    },
+    {
+      "id": "5",
+      "Name": "Ethan",
+      "email": "ethan@gmail.com",
+      "password": "77889"
+    },
+    {
+      "id": "7f9e",
+      "username": "Caio Ferreira",
+      "password": "caio12345",
+      "email": "caioferreira@gmail.com"
+    },
+    {
+      "id": "a7de",
+      "username": "lucio",
+      "password": "lucio123",
+      "email": "lucio@gmail.com"
+    },
+    {
+      "id": "8a17",
+      "username": "b",
+      "password": "b",
+      "email": "b@gmail.com"
+    },
+    {
+      "id": "508f",
+      "username": "boca",
+      "password": "boca",
+      "email": "boca@gmail.com"
+    }
+  ],
+    "groups": [
+      {
+        "id": "1",
+        "name": "Grupo 1",
+        "description": "Grupo 1",
+        "users": [
+          {
+            "id": "1",
+            "Name": "Bruno",
+            "email": "bruno@gmail.com"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Grupo 2",
+        "description": "Grupo 2",
+        "users": [
+          {
+            "id": "2",
+            "Name": "Alice",
+            "email": "alice@gmail.com"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Grupo 3",
+        "description": "Grupo 3",
+        "users": [
+          {
+            "id": "3",
+            "Name": "Carlos",
+            "email": "carlos@gmail.com"
+          }
+        ]
+      }
+    ]
+  }

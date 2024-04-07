@@ -1,19 +1,20 @@
 
 
 /* Container styles with adjustments for full viewport coverage and centering */
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Ensures the container covers the full viewport height */
-  background-image: url('../assets/loginbk.jpg'); /* Add this line, replace with your image path */
+  background-image: url('../assets/matheus-ferrero-TkrRvwxjb_8-unsplash.jpg'); /* Add this line, replace with your image path */
   background-size: cover; /* This will make sure the image covers the whole container */
   background-position: center; /* This will center the image in the container */
 }
 
 .container h1 {
-  color: #333;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 

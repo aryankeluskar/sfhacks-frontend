@@ -17,12 +17,12 @@ const Navbar: React.FC = () => {
             <ul className="navbar-nav">
                 <li className="nav-item">
                     {/* Apply dynamic class based on active state */}
-                    <NavLink to="/feed" className={({ isActive }) => getClassName(isActive)}>
+                    <NavLink to={`/:email/feed`} className={({ isActive }) => getClassName(isActive)}>
                         Home
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/login" className={({ isActive }) => getClassName(isActive)}>
+                    <NavLink to="/" className={({ isActive }) => getClassName(isActive)}>
                         Login
                     </NavLink>
                 </li>

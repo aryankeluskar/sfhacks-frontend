@@ -1,12 +1,14 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
-import styles from '../css/SignUp.module.css'; // Import the CSS module
-import { Link } from 'react-router-dom';
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import styles from "../css/SignUp.module.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp: React.FC = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [email, setEmail] = useState("");
+
+  const navigate = useNavigate(); // Call useNavigate at the top level
 
   const handleUsername = (e: ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
@@ -24,30 +26,60 @@ const SignUp: React.FC = () => {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
-    if (username === '' || password === '' || email === '' || confirmPassword === '') {
-      alert('Please fill in all fields');
+    if (
+      username === "" ||
+      password === "" ||
+      email === "" ||
+      confirmPassword === ""
+    ) {
+      alert("Please fill in all fields");
       return;
     }
 
     if (password !== confirmPassword) {
-      alert('Passwords do not match');
+      alert("Passwords do not match");
       return;
     }
 
-    console.log({ Username: username, Password: password, Email: email });
+    const user = {
+      username,
+      password,
+      email,
+    };
+
+    const url = "http://localhost:3001/users";
+
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user),
+      });
+
+      const addedProduct = await res.json();
+
+      console.log(addedProduct);
+    } catch (error) {
+      console.error("Error posting data:", error);
+    }
 
     // Reset fields after submission for demonstration
-    setUsername('');
-    setPassword('');
-    setEmail('');
-    setConfirmPassword('');
+    setUsername("");
+    setPassword("");
+    setEmail("");
+    setConfirmPassword("");
+    
+    // Use navigate inside handleSubmit
+    navigate(`/${email}/topics`); // Redirect to the user's email page
   };
 
   return (
-    <div className={styles.container}> {/* Use styles object for class */}
-      <h1>Sign Up Page</h1>
+    <div className={styles.container}>
+      <h1>Create a new user</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username</label>
