@@ -9,14 +9,15 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
     <div className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item"><a href="/">Home</a></li>
-        <li className="navbar-item"><a href="/">name</a></li>
+        <li className="navbar-item"><a href="/">name</a></li> 
         {/* Add more navbar items as needed */}
         {isLoggedIn ? (
-          <li className="navbar-item">User Dropdown</li>
+          <li className="navbar-item"> </li>
         ) : (
           <li className="navbar-item"><a href="/login">Login</a></li>
         )}
         <div className="navbar-marker"></div>
+
       </ul>
     </div>
   );
