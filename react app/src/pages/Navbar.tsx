@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-dom
-import "./Navbar.css";
+import "../css/Navbar.css";
 
 const Navbar: React.FC = () => {
     // Function to determine the class name based on isActive

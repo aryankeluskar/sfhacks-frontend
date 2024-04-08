@@ -1,6 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { Link } from "react-router-dom";
-import styles from "../css/Login.module.css";
+import  "../css/Login.css";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -22,8 +22,8 @@ function Login() {
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.descri}>Welcome Back !</h1>
+    <div className="container">
+      <h1 className="descri">Welcome Back !</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username</label>
